@@ -180,7 +180,7 @@ hr{
     border: 1px solid #D1D5DB;
     border-radius: 50px;
 }
-.btnRemove{
+#btnRemove1{    
     position: relative;
     top: 4px;
     left: 7px;
@@ -188,6 +188,7 @@ hr{
     height: 16px;
     background-color: #fff;
     border: none;
+    color: red;    
 }
 #qtdProduto{
     position: relative;
@@ -197,7 +198,7 @@ hr{
     left: 15px;
     
 }
-#btnAdd{
+#btnAdd1{
     
     position: relative;
     top: -10px;
