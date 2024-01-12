@@ -378,7 +378,7 @@ strong{
 
 /* Responsividade Mobile Escondendo Likes */
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     .main{
         position: relative;
         display: grid;
