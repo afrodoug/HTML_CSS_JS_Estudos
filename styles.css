@@ -182,8 +182,8 @@ hr{
 }
 #btnRemove1{    
     position: relative;
-    top: 4px;
-    left: 7px;
+    top: 5px;
+    left: 5px;
     width: 16px;    
     height: 16px;
     background-color: #fff;
@@ -193,18 +193,20 @@ hr{
 #qtdProduto{
     position: relative;
     top: 6px;
-    width: 9px;
+    width: 25px;
     height: 16px;
-    left: 15px;
-    
+    left: 5px;
+    z-index: 7;
+    align-items: center;    
 }
-#btnAdd1{
-    
+#btnAdd1{    
     position: relative;
     top: -10px;
-    right: -25px;
+    right: -26px;
     border:transparent;
     background-color: #fff;
+    z-index: 0
+
 }
 
 
