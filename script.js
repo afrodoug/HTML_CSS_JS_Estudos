@@ -20,6 +20,13 @@ function selecionaTransportadora2(){
     alert('Botão funcioando');
 }
 function incrementapdt1(){
-    const alteraQtdCarrinho = document.getElementById("qtdProduto");
-    alteraQtdCarrinho.innerHTML=("2")
+        let qtdProduto = document.getElementById("qtdProduto");
+        qtdProduto.innerHTML=Number(qtdProduto.innerHTML)+1
+        let qtdEstoque = document.querySelector("#divlinhaProduto1 .qtdEstoque")
+        qtdEstoque.innerHTML = Number(qtdEstoque.innerHTML) - Number(qtdProduto.innerHTML)
+}
+
+function decrementapdt1(){
+    let qtdProduto = document.getElementById("qtdProduto");
+    qtdProduto.innerHTML=Number(qtdProduto.innerHTML)-1
 }
