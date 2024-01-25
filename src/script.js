@@ -1,3 +1,9 @@
+// Constantes globais de interação
+const alteraBorda1=document.getElementById("trans1");
+const alteraBtn1 = document.getElementById("selecionar1");
+const alteraBorda2=document.getElementById("trans2");
+const alteraBtn2 = document.getElementById("selecionar2");
+
 var qtdItens = document.querySelector("#qtdItens");
 // qtdItens.innerHTML=("teste")
 var estoque1 = document.getElementById("estoque1")
@@ -6,38 +12,27 @@ var qtdLikes1 = document.getElementById("qtdLikes1")
 // qtdLikes1.innerHTML = ("teste")
 var alteraValorTotal=document.getElementById("valorTotal")
 //FAZER FUNCIONAR DAQUI PARA BAIXO
-
-parseFloat(alteraValorTotal)
-parseFloat(estoque1)
-parseFloat(qtdItens)
-console.log((alteraValorTotal) = (estoque1)+(qtdItens))
-
 var qtdItens = document.getElementById("qtdItens")
 let itens = 0
 itens.parseFloat = qtdItens
-// function btnTeste(){
-//     const teste = document.getElementsByClassName("Teste")[0];
-//     teste.classList.add("selecionado")
-// }
-// Altera CSS da transportadora Selecionada
-function selecionaTransportadora1(){
-    const alteraBtn = document.getElementById("selecionar1");
-    const alteraborda=document.getElementById("trans1");
-    alteraborda.style.borderColor=("#492BC4");
-    alteraBtn.style.background = ("#10B981");
-    alteraBtn.textContent="selecionado"
-    // alteraValorTotal.innerHTML="R$ 1600,00"
-    // qtdItens.backgroundColor=("black")
-    alert("botaok")
+
+function selecionaTransportadora1(){    
+    alteraBtn1.classList.add('btnSelecionado');
+    alteraBorda1.classList.add('bordaSelecionada')
+    alteraBtn2.classList.remove('btnSelecionado');
+    alteraBorda2.classList.remove('bordaSelecionada')
+    alteraBtn.textContent="selecionado"    
+    alteraValorTotal.innerHTML="R$ 1600,00"
 }
 // Altera CSS da transportadora Selecionada
 function selecionaTransportadora2(){
-    const alteraBtn = document.getElementById("selecionar2")
-    const alteraborda=document.getElementById("trans2")    
-    alteraborda.style.borderColor=("#492BC4");
-    alteraBtn.style.background = ("#10B981");
-    alteraBtn.textContent="selecionado"
-    // alert('Botão funcioando');
+    alteraBtn1.classList.remove('btnSelecionado');
+    alteraBorda1.classList.remove('bordaSelecionada')
+    alteraBtn2.classList.add('btnSelecionado');
+    alteraBorda2.classList.add('bordaSelecionada')
+    alteraBtn.textContent="selecionado";
+    alteraValorTotal.innerHTML="R$ 1580,00";
+
 }
 // Inicio interage com a quantidade de produtos
 function incrementapdt(){

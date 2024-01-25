@@ -3,7 +3,8 @@
 @media (max-width: 1024px) {
     .main{
         position: relative;
-        display: grid;
+        display:grid;
+        grid-template-columns: 1fr;
         grid-template-rows:1600px 1fr 1fr;
         }
 /*Configuração das divs  */
@@ -14,11 +15,12 @@
         height: 100%;
         margin-top: 100px;
     }
-    .divEntrega{
+    .aside{
     position: relative;
     width: 375px;
     left: 15px;
     }
+    
 /* Fim Configuração das divs */
 /* Carrinho */
     .bag{
