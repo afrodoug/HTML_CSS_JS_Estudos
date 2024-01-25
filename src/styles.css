@@ -1,0 +1,30 @@
+/* Aplica-se à toda página */
+*{font-family: 'Nunito', sans-serif;
+}
+.divCarrinho{
+    display: inline-block;
+    width: 883px;
+    height: 900px;
+    flex-shrink: 0;
+    background-color: #fff;
+    padding-right: 60px;
+    }
+
+.divCarrinho hr{
+    position: relative;
+    width: 100%;
+    width: 923px;
+    position: relative;
+    top: -50px;
+    border: 2px solid ;
+    border-color: #D1D5DB;
+ }
+
+.bag {
+    position: relative;  
+    top: -43px;
+    left: 800px;
+    width: 24px;
+    height: 24px;
+    }
+    

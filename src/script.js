@@ -50,3 +50,5 @@ function decrementapdt(){
     qtdProduto.innerHTML=Number(qtdProduto.innerHTML)-1
 }
 // Fim interage com a quantidade de produtos selecionados
+
+
