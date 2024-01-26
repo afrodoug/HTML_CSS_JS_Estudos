@@ -1,3 +1,30 @@
+.divCarrinho{
+    display: inline-block;
+    width: 883px;
+    height: 900px;
+    flex-shrink: 0;
+    background-color: #fff;
+    padding-right: 60px;
+    }
+
+.divCarrinho hr{
+    position: relative;
+    width: 100%;
+    width: 903px;
+    position: relative;
+    top: -50px;
+    border: 2px solid ;
+    border-color: #D1D5DB;
+ }
+
+.bag {
+    position: relative;  
+    top: -43px;
+    left: 800px;
+    width: 24px;
+    height: 24px;
+    }
+    
 .linhaProduto1 {
     margin-bottom: 32px;
     position: relative;
@@ -120,17 +147,16 @@
     border: 1px solid #D1D5DB;
     border-radius: 50px;
 }
-#btnRemove1{    
+.btnRemove{    
     position: relative;
     top: 5px;
     left: 5px;
     width: 16px;    
     height: 16px;
     background-color: #fff;
-    border: none;
-    color: red;    
+    border: none;   
 }
-#qtdProduto{
+.totalItem{
     position: relative;
     top: 6px;
     width: 25px;
@@ -139,7 +165,7 @@
     z-index: 7;
     align-items: center;    
 }
-#btnAdd1{    
+.btnAdd{    
     position: relative;
     height: 3px;
     top: -10px;
