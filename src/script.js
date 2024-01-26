@@ -19,6 +19,8 @@ let qtdProduto = 0;
 let qtdProduto2 = 0;
 let qtdProduto3 = 0;
 let carrinho = 0
+let imgAlert;
+
 // fim constantes globais
 
 carregaValores()
@@ -68,7 +70,7 @@ function decrementapdt2(){
     carregaValores();
 }
 function incrementapdt3(){
-    if (qtdEstoque3 ===0) return alert("Fora de estoque");
+    if (qtdEstoque3 ===0) return alert(Image()`Produto fora de estoque`);
     qtdProduto3+=1;
     qtdEstoque3-=1;
     carregaValores()
