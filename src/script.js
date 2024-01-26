@@ -68,6 +68,7 @@ function decrementapdt2(){
     carregaValores();
 }
 function incrementapdt3(){
+    if (qtdEstoque3 ===0) return alert("Fora de estoque");
     qtdProduto3+=1;
     qtdEstoque3-=1;
     carregaValores()
@@ -75,13 +76,13 @@ function incrementapdt3(){
 
 function decrementapdt3(){
     // Verificar este cálculo.
-    if (qtdProduto3 === 0 || qtdProduto3>=5) return;
+    if (qtdProduto3 === 0 ) return;
+    
     qtdProduto3-=1;
     qtdEstoque3+=1;
     carregaValores();
 }
 // Fim interage com a quantidade de produtos selecionados
-
 
 function carregaValores(){
     carrinho = qtdProduto+qtdProduto2+qtdProduto3;

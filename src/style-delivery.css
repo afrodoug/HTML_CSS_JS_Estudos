@@ -1,7 +1,7 @@
 .aside {
     position: relative;
-    bottom: 900px;
-    left: 940px;
+    bottom: 910px;
+    left: 910px;
     width: 399px;
     height: 840px;
     padding-top: 60px;
@@ -35,7 +35,6 @@
     border: 1px solid;
     border-radius: 4px;
     border-color: #6B7280;
-    width: 307px;
     height: 195px;
     box-shadow: 0px 0px 0px 1px #D1D5DB;    
 }
