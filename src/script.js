@@ -9,6 +9,9 @@ const valorCorreios = 40;
 const valorTransportadora = 20.00
 let alteraTranportadora=0
 var qtdEstoque = 100;
+var qtdEstoque2 = 100;
+var qtdEstoque2 = 5;
+var qtdEstoquee3 = 5;
 let valorTotal = 0;
 let valorProduto = 15;
 let itensCarrinho = 0;
@@ -64,15 +67,29 @@ function decrementapdt2(){
     qtdEstoque2+=1;
     carregaValores();
 }
+function incrementapdt3(){
+    qtdProduto3+=1;
+    qtdEstoque3-=1;
+    carregaValores()
+}
+
+function decrementapdt3(){
+    if (qtdProduto3 === 0) return;
+    qtdProduto3-=1;
+    qtdEstoque3+=1;
+    carregaValores();
+}
 // Fim interage com a quantidade de produtos selecionados
 
 
 function carregaValores(){
+    carrinho = qtdProduto+qtdProduto2+qtdProduto3;
     document.getElementsByClassName("totalItem")[0].innerHTML=qtdProduto;
-    document.getElementsByClassName("totalItem2")[0].innerHTML=qtdProduto2;
-    // document.getElementsByClassName("totalItem")[2].innerHTML=qtdProduto3;
-    carrinho = qtdProduto
-    document.getElementById("valorTotal").innerHTML = `${((qtdProduto * valorProduto) + alteraTranportadora).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
+    document.getElementById("qtdProduto2").innerHTML=qtdProduto2;
+    document.getElementById("qtdProduto3").innerHTML=qtdProduto3;
+    document.getElementById("valorTotal").innerHTML = `${((qtdProduto * valorProduto)+(qtdProduto2 * valorProduto2)+(qtdProduto3 * valorProduto3) + alteraTranportadora).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
     document.getElementById("qtdItens").innerHTML=(carrinho)
     document.getElementById("estoque1").innerHTML=(qtdEstoque);
+    document.getElementById("estoque2").innerHTML=(qtdEstoque2);
+    document.getElementById("estoque3").innerHTML=(qtdEstoque3);
 }

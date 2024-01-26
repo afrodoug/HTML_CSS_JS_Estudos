@@ -120,15 +120,14 @@
     border: 1px solid #D1D5DB;
     border-radius: 50px;
 }
-#btnRemove1{    
+.btnRemove{    
     position: relative;
     top: 5px;
     left: 5px;
     width: 16px;    
     height: 16px;
     background-color: #fff;
-    border: none;
-    color: red;    
+    border: none;   
 }
 #qtdProduto{
     position: relative;
@@ -139,7 +138,7 @@
     z-index: 7;
     align-items: center;    
 }
-#btnAdd1{    
+.btnAdd{    
     position: relative;
     height: 3px;
     top: -10px;
