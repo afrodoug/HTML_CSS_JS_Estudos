@@ -37,7 +37,7 @@
             </div>
             </div>
             <!-- Produto1 -->
-            <div class="linhaProduto1">
+            <div name=" Mostarda Heinz" class="linhaProduto1">
                 <img class="imgProdutos" src="https://cdn.leroymerlin.com.br/frontend-test/mostarda.jpg" alt="">
                 <span class="nomeProduto">Mostarda Heinz</span>
                 <span class="estqProduto">Estoque</span>
@@ -59,16 +59,16 @@
                 <!-- Div Botão adicionar e remover Item -->
                 
                 <div class="btnAddOrRemove">
-                    <button id="btnRemove1" onclick="decrementapdt()">
+                    <button id="btnRemove1" onclick=decrementapdt()>
                         <div style="width: 100%; height: 100%; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
                             <div style="width: 9.33px; height: 1.33px; background: #6B7280"></div>
                             </div>                    
                     </button>
                     <span>
-                        <div id="qtdProduto" style="color: #6B7280; font-size: 16px; font-family: Source Sans Pro; font-weight: 600; line-height: 24px; word-wrap: break-word">
+                        <div class="totalItem" id="qtdProduto">
                             1
                         </div>
-                        <button id="btnAdd1" onclick="incrementapdt()">
+                        <button id="btnAdd1" onclick=incrementapdt()>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M12.6669 8.66666H8.6669V12.6667H7.33357V8.66666H3.33357V7.33333H7.33357V3.33333H8.6669V7.33333H12.6669V8.66666Z" fill="#6B7280"/>
                             </svg>
@@ -96,13 +96,13 @@
                     </svg>
                 <span class="qtdLikesProduto">800</span>
                 <div class="btnAddOrRemove">
-                    <button id="btnRemove1">
+                    <button id="btnRemove1" >
                         <div style="width: 100%; height: 100%; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
                             <div style="width: 9.33px; height: 1.33px; background: #6B7280"></div>
                             </div>                    
                     </button>
                     <span>
-                        <div id="qtdProduto" style="color: #6B7280; font-size: 16px; font-family: Source Sans Pro; font-weight: 600; line-height: 24px; word-wrap: break-word">
+                        <div id="qtdProduto">
                             1
                         </div>
                         <button id="btnAdd1">
@@ -132,14 +132,14 @@
                     </defs>
                     </svg>
                 <span class="qtdLikesProduto">800</span>
-                <div class="btnAddOrRemove">
+                <div class="btnAddOrRemove" onclick="(decrementapdt)">
                     <button id="btnRemove1">
                         <div style="width: 100%; height: 100%; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
                             <div style="width: 9.33px; height: 1.33px; background: #6B7280"></div>
                             </div>                    
                     </button>
                     <span>
-                        <div id="qtdProduto" style="color: #6B7280; font-size: 16px; font-family: Source Sans Pro; font-weight: 600; line-height: 24px; word-wrap: break-word">
+                        <div class="totalItem" id="qtdProduto">
                             1
                         </div>
                         <button id="btnAdd1">
@@ -184,7 +184,6 @@
             <button id="finalizaCompra">Finalizar compra</button>
             </div>
     </div>
-    <script src="./src/script.js">        
-    </script>          
+    <script src="./src/script.js"></script>          
 </body>
 </html>
