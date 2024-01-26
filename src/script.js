@@ -11,7 +11,7 @@ let alteraTranportadora=0
 var qtdEstoque = 100;
 var qtdEstoque2 = 100;
 var qtdEstoque2 = 5;
-var qtdEstoquee3 = 5;
+var qtdEstoque3 = 5;
 let valorTotal = 0;
 let valorProduto = 15;
 let itensCarrinho = 0;
@@ -74,7 +74,8 @@ function incrementapdt3(){
 }
 
 function decrementapdt3(){
-    if (qtdProduto3 === 0) return;
+    // Verificar este cálculo.
+    if (qtdProduto3 === 0 || qtdProduto3>=5) return;
     qtdProduto3-=1;
     qtdEstoque3+=1;
     carregaValores();
@@ -91,5 +92,5 @@ function carregaValores(){
     document.getElementById("qtdItens").innerHTML=(carrinho)
     document.getElementById("estoque1").innerHTML=(qtdEstoque);
     document.getElementById("estoque2").innerHTML=(qtdEstoque2);
-    document.getElementById("estoque3").innerHTML=(qtdEstoque3);
+    document.getElementById("qtdEstoque3").innerHTML=(qtdEstoque3);
 }
