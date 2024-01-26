@@ -72,7 +72,7 @@ function carregaValores(){
     document.getElementsByClassName("totalItem2")[0].innerHTML=qtdProduto2;
     // document.getElementsByClassName("totalItem")[2].innerHTML=qtdProduto3;
     carrinho = qtdProduto
-    document.getElementById("valorTotal").innerHTML=(`R$ ${(qtdProduto*valorProduto)+alteraTranportadora},00`).toLocaleString('pt-BR',{style:'currency',currency:'BRL'})
+    document.getElementById("valorTotal").innerHTML = `${((qtdProduto * valorProduto) + alteraTranportadora).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
     document.getElementById("qtdItens").innerHTML=(carrinho)
     document.getElementById("estoque1").innerHTML=(qtdEstoque);
 }
