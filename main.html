@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <head>
+
         <link rel="stylesheet" href="./src/style-delivery.css">
         <link rel="stylesheet" href="./src/style-products.css">
         <link rel="stylesheet" href="./src/style-main.css">
         <link rel="stylesheet" href="./src/vars.css">
         <link rel="stylesheet" href="./src/styles.css">
         <link rel="stylesheet" href="./src/style-responsivo.css">      
-    </head>
+</head>
     <!-- Importação Fonte Nunito -->
     <style>
   @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 </style>
-    </style>
 <body>
     <!-- Inicio Página Principal -->
     <div class="main">
@@ -43,9 +42,9 @@
                 <span class="estqProduto">Estoque</span>
                 <span class="likesProduto">Quem Gostou?</span>
                 <span class="valorProduto">R$15,00</span>
-                <span id="estoque1" class="qtdEstoque">100 un.</span>
+                <span id="estoque1" class="qtdEstoque"></span>
                 <!-- Quantidade de Likes Produto 1 -->
-                <svg id="likes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <svg class="likes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <g clip-path="url(#clip0_2261_31)">
                       <path d="M8 14C7.91226 14.0005 7.82529 13.9837 7.74406 13.9505C7.66284 13.9174 7.58896 13.8685 7.52667 13.8067L2.34667 8.62001C1.69691 7.96346 1.33244 7.07706 1.33244 6.15334C1.33244 5.22963 1.69691 4.34323 2.34667 3.68668C3.00151 3.03369 3.88856 2.66699 4.81333 2.66699C5.73811 2.66699 6.62516 3.03369 7.28 3.68668L8 4.40668L8.72 3.68668C9.37484 3.03369 10.2619 2.66699 11.1867 2.66699C12.1114 2.66699 12.9985 3.03369 13.6533 3.68668C14.3031 4.34323 14.6676 5.22963 14.6676 6.15334C14.6676 7.07706 14.3031 7.96346 13.6533 8.62001L8.47333 13.8067C8.41104 13.8685 8.33716 13.9174 8.25594 13.9505C8.17471 13.9837 8.08774 14.0005 8 14Z" fill="#EF4444"/>
                     </g>
@@ -66,7 +65,6 @@
                     </button>
                     <span>
                         <div class="totalItem" id="qtdProduto">
-                            1
                         </div>
                         <button id="btnAdd1" onclick=incrementapdt()>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -83,8 +81,8 @@
                 <span class="estqProduto">Estoque</span>
                 <span class="likesProduto">Quem Gostou?</span>
                 <span class="valorProduto">R$25,00</span>
-                <span class="qtdEstoque">50 un.</span>
-                <svg id="likes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <span class="qtdEstoque" id="estoque2">50 un.</span>
+                <svg class="likes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <g clip-path="url(#clip0_2261_31)">
                         <path d="M8 14C7.91226 14.0005 7.82529 13.9837 7.74406 13.9505C7.66284 13.9174 7.58896 13.8685 7.52667 13.8067L2.34667 8.62001C1.69691 7.96346 1.33244 7.07706 1.33244 6.15334C1.33244 5.22963 1.69691 4.34323 2.34667 3.68668C3.00151 3.03369 3.88856 2.66699 4.81333 2.66699C5.73811 2.66699 6.62516 3.03369 7.28 3.68668L8 4.40668L8.72 3.68668C9.37484 3.03369 10.2619 2.66699 11.1867 2.66699C12.1114 2.66699 12.9985 3.03369 13.6533 3.68668C14.3031 4.34323 14.6676 5.22963 14.6676 6.15334C14.6676 7.07706 14.3031 7.96346 13.6533 8.62001L8.47333 13.8067C8.41104 13.8685 8.33716 13.9174 8.25594 13.9505C8.17471 13.9837 8.08774 14.0005 8 14Z" fill="#EF4444"/>
                     </g>
@@ -95,17 +93,16 @@
                     </defs>
                     </svg>
                 <span class="qtdLikesProduto">800</span>
-                <div class="btnAddOrRemove">
-                    <button id="btnRemove1" >
+                <div class="btnAddOrRemove" onclick=decrementapdt2()>
+                    <button id="btnRemove2" >
                         <div style="width: 100%; height: 100%; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
                             <div style="width: 9.33px; height: 1.33px; background: #6B7280"></div>
                             </div>                    
                     </button>
                     <span>
-                        <div id="qtdProduto">
-                            1
+                        <div class="totalItem2" id="qtdProduto2">
                         </div>
-                        <button id="btnAdd1">
+                        <button id="btnAdd2" onclick=incrementapdt2()>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M12.6669 8.66666H8.6669V12.6667H7.33357V8.66666H3.33357V7.33333H7.33357V3.33333H8.6669V7.33333H12.6669V8.66666Z" fill="#6B7280"/>
                             </svg>
@@ -121,7 +118,7 @@
                 <span class="likesProduto">Quem Gostou?</span>
                 <span class="valorProduto3">R$1500,00</span>
                 <span class="qtdEstoque"> 5 un.</span>
-                <svg id="likes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <svg class="likes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <g clip-path="url(#clip0_2261_31)">
                         <path d="M8 14C7.91226 14.0005 7.82529 13.9837 7.74406 13.9505C7.66284 13.9174 7.58896 13.8685 7.52667 13.8067L2.34667 8.62001C1.69691 7.96346 1.33244 7.07706 1.33244 6.15334C1.33244 5.22963 1.69691 4.34323 2.34667 3.68668C3.00151 3.03369 3.88856 2.66699 4.81333 2.66699C5.73811 2.66699 6.62516 3.03369 7.28 3.68668L8 4.40668L8.72 3.68668C9.37484 3.03369 10.2619 2.66699 11.1867 2.66699C12.1114 2.66699 12.9985 3.03369 13.6533 3.68668C14.3031 4.34323 14.6676 5.22963 14.6676 6.15334C14.6676 7.07706 14.3031 7.96346 13.6533 8.62001L8.47333 13.8067C8.41104 13.8685 8.33716 13.9174 8.25594 13.9505C8.17471 13.9837 8.08774 14.0005 8 14Z" fill="#EF4444"/>
                     </g>
@@ -133,16 +130,16 @@
                     </svg>
                 <span class="qtdLikesProduto">800</span>
                 <div class="btnAddOrRemove" onclick="(decrementapdt)">
-                    <button id="btnRemove1">
-                        <div style="width: 100%; height: 100%; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <button id="btnRemove3">
+                        <div>
                             <div style="width: 9.33px; height: 1.33px; background: #6B7280"></div>
                             </div>                    
                     </button>
                     <span>
-                        <div class="totalItem" id="qtdProduto">
+                        <div class="totalItem" id="qtdProduto ">
                             1
                         </div>
-                        <button id="btnAdd1">
+                        <button id="btnAdd3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M12.6669 8.66666H8.6669V12.6667H7.33357V8.66666H3.33357V7.33333H7.33357V3.33333H8.6669V7.33333H12.6669V8.66666Z" fill="#6B7280"/>
                             </svg>
