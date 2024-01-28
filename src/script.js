@@ -24,6 +24,17 @@ let imgAlert;
 // fim constantes globais
 
 carregaValores()
+    window.onload = function carregaVariáveis(){
+    const totalItens = qtdProduto + qtdProduto2 + qtdProduto3;
+    carrinho = totalItens <= 1 ? `${totalItens} Item` : `${totalItens} Itens`;
+    document.getElementById("qtdItens").innerHTML="0 Item"
+    document.getElementById("qtdProduto2").innerHTML="0";
+    document.getElementById("qtdProduto3").innerHTML="0";
+    document.getElementById("estoque1").innerHTML="0"
+    document.getElementById("estoque2").innerHTML="0"
+    document.getElementById("qtdEstoque3").innerHTML="0"
+    console.log("Teste Ok")
+}
 
 function selecionaTransportadora1(){    
     alteraBtn1.classList.add('btnSelecionado');
@@ -87,13 +98,18 @@ function decrementapdt3(){
 // Fim interage com a quantidade de produtos selecionados
 
 function carregaValores(){
-    carrinho = qtdProduto+qtdProduto2+qtdProduto3;
+//     if (carrinho<2) { carrinho =` ${qtdProduto+qtdProduto2+qtdProduto3} Item`
+// }else{
+//    carrinho = `${qtdProduto+qtdProduto2+qtdProduto3} Itens`
+// }
+    const totalItens = qtdProduto + qtdProduto2 + qtdProduto3;
+    carrinho = totalItens <= 1 ? `${totalItens} Item` : `${totalItens} Itens`;
     document.getElementsByClassName("totalItem")[0].innerHTML=qtdProduto;
     document.getElementById("qtdProduto2").innerHTML=qtdProduto2;
     document.getElementById("qtdProduto3").innerHTML=qtdProduto3;
     document.getElementById("valorTotal").innerHTML = `${((qtdProduto * valorProduto)+(qtdProduto2 * valorProduto2)+(qtdProduto3 * valorProduto3) + alteraTranportadora).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
     document.getElementById("qtdItens").innerHTML=(carrinho)
-    document.getElementById("estoque1").innerHTML=(qtdEstoque);
+    // document.getElementById("estoque1").innerHTML=(qtdEstoque);
     document.getElementById("estoque2").innerHTML=(qtdEstoque2);
     document.getElementById("qtdEstoque3").innerHTML=(qtdEstoque3);
 }
