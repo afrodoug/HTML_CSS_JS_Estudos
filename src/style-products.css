@@ -139,14 +139,23 @@
 .btnAddOrRemove{
     display: flex;
     position: relative;
-    top: -100px;
-    right: -671px;
-    background-color: #fff;
     width: 73px;
     height: 32px;
     border: 1px solid #D1D5DB;
     border-radius: 50px;
+    bottom: 100px;
+    left: 671px;
+    background-color: #fff;
+    
 }
+.qtdItem1{
+    position: relative;
+    top: 6px;
+    left: 32px;
+    width: 9px;
+    height: 24px;
+    border: none;
+    }
 .btnRemove{    
     position: relative;
     top: 5px;
